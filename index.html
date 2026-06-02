@@ -20,17 +20,21 @@
     <header class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
-                    <path d="M9 22V10L14 16L19 10V22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M23 22L19 17" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                    <path d="M19 14.5C19 13.1193 20.1193 12 21.5 12C22.8807 12 24 13.1193 24 14.5C24 15.8807 22.8807 17 21.5 17C20.1193 17 19 15.8807 19 14.5Z" stroke="white" stroke-width="2"/>
+                <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2563eb"/>
-                            <stop offset="1" stop-color="#1e3a8a"/>
+                        <linearGradient id="logo-blue-grad" x1="30" y1="20" x2="80" y2="70" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#00d2ff"/>
+                            <stop offset="40%" stop-color="#0066ff"/>
+                            <stop offset="100%" stop-color="#001144"/>
+                        </linearGradient>
+                        <linearGradient id="logo-navy-grad" x1="45" y1="35" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0055ff"/>
+                            <stop offset="100%" stop-color="#000b26"/>
                         </linearGradient>
                     </defs>
+                    <path d="M34.5 28.5L44.5 18.5H70C81 18.5 87.5 25 87.5 35C87.5 45 81 51.5 70 51.5H57.5L51.5 45.5H70C76 45.5 80.5 42 80.5 35C80.5 28 76 25.5 70 25.5H48.5L34.5 39.5V28.5Z" fill="url(#logo-blue-grad)"/>
+                    <path d="M35 40C35 34.5 38.5 29.5 44 29.5C45.5 29.5 45.5 35 45.5 38.5V57L35 67.5V40Z" fill="url(#logo-blue-grad)"/>
+                    <path d="M50 36.5H57.5V49L50 56.5V36.5Z" fill="url(#logo-navy-grad)"/>
                 </svg>
                 <span>Prime Tech <span class="accent-text">Agency</span></span>
             </a>
@@ -470,22 +474,33 @@
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)"/>
-                            <path d="M9 22V10L14 16L19 10V22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M23 22L19 17" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-                            <path d="M19 14.5C19 13.1193 20.1193 12 21.5 12C22.8807 12 24 13.1193 24 14.5C24 15.8807 22.8807 17 21.5 17C20.1193 17 19 15.8807 19 14.5Z" stroke="white" stroke-width="2"/>
+                    <div class="brand-logo-full">
+                        <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
                             <defs>
-                                <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2563eb"/>
-                                    <stop offset="1" stop-color="#1e3a8a"/>
+                                <linearGradient id="logo-blue-grad-footer" x1="30" y1="20" x2="80" y2="70" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#00d2ff"/>
+                                    <stop offset="40%" stop-color="#0066ff"/>
+                                    <stop offset="100%" stop-color="#001144"/>
+                                </linearGradient>
+                                <linearGradient id="logo-navy-grad-footer" x1="45" y1="35" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#0055ff"/>
+                                    <stop offset="100%" stop-color="#000b26"/>
                                 </linearGradient>
                             </defs>
+                            <path d="M34.5 28.5L44.5 18.5H70C81 18.5 87.5 25 87.5 35C87.5 45 81 51.5 70 51.5H57.5L51.5 45.5H70C76 45.5 80.5 42 80.5 35C80.5 28 76 25.5 70 25.5H48.5L34.5 39.5V28.5Z" fill="url(#logo-blue-grad-footer)"/>
+                            <path d="M35 40C35 34.5 38.5 29.5 44 29.5C45.5 29.5 45.5 35 45.5 38.5V57L35 67.5V40Z" fill="url(#logo-blue-grad-footer)"/>
+                            <path d="M50 36.5H57.5V49L50 56.5V36.5Z" fill="url(#logo-navy-grad-footer)"/>
                         </svg>
-                        <span>Prime Tech <span class="accent-text">Agency</span></span>
-                    </a>
-                    <p class="footer-slogan">Tráfego pago estruturado para empresas que operam em alto nível.</p>
+                        <div class="brand-text-container">
+                            <span class="brand-title">Prime <span class="brand-title-accent">Tech</span></span>
+                            <div class="brand-subtitle">
+                                <span class="subtitle-line"></span>
+                                <span class="subtitle-txt">TRÁFEGO PAGO</span>
+                                <span class="subtitle-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-slogan" style="margin-top: 1.2rem;">Tráfego pago estruturado para empresas que operam em alto nível.</p>
                 </div>
                 
                 <div class="footer-nav">
