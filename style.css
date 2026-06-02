@@ -971,6 +971,79 @@ p {
 }
 
 /* ==========================================================================
+   WHATSAPP CTA & SEPARATOR
+   ========================================================================== */
+.whatsapp-cta-box {
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: rgba(16, 185, 129, 0.05);
+    border: 1px dashed rgba(16, 185, 129, 0.3);
+    padding: 2.2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-cta-box:hover {
+    background-color: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.5);
+}
+
+.whatsapp-cta-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.whatsapp-cta-box p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+    font-weight: 700;
+    gap: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    width: 100%;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+    transform: translateY(-2px);
+}
+
+.form-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.form-separator::before,
+.form-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-separator:not(:empty)::before {
+    margin-right: 1em;
+}
+
+.form-separator:not(:empty)::after {
+    margin-left: 1em;
+}
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .footer {

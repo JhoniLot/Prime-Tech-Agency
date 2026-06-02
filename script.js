@@ -123,23 +123,46 @@ document.addEventListener('DOMContentLoaded', () => {
             const segment = document.getElementById('segment').value;
             const budget = document.getElementById('budget').value;
 
-            console.log('Lead Capturado com sucesso:', {
-                name,
-                company,
-                whatsapp,
-                email,
-                segment,
-                budget,
-                date: new Date().toISOString()
+            // Submit using FormSubmit AJAX
+            fetch("https://formsubmit.co/ajax/softwares.primetech@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    Nome: name,
+                    Empresa: company,
+                    WhatsApp: whatsapp,
+                    Email: email,
+                    Segmento: segment,
+                    Orcamento: budget
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Perform visual transitions: hide form fields and show success panel
+                leadForm.classList.add('hide');
+                
+                const whatsappBox = document.querySelector('.whatsapp-cta-box');
+                const separator = document.querySelector('.form-separator');
+                if (whatsappBox) whatsappBox.classList.add('hide');
+                if (separator) separator.classList.add('hide');
+                
+                successMessage.classList.remove('hide');
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Fail-safe: display success screen so the user doesn't feel blocked
+                leadForm.classList.add('hide');
+                const whatsappBox = document.querySelector('.whatsapp-cta-box');
+                const separator = document.querySelector('.form-separator');
+                if (whatsappBox) whatsappBox.classList.add('hide');
+                if (separator) separator.classList.add('hide');
+                successMessage.classList.remove('hide');
             });
-
-            // Perform visual transitions: hide form fields and show success panel
-            // This happens dynamically within the contact card frame.
-            leadForm.classList.add('hide');
-            successMessage.classList.remove('hide');
-
-            // Scroll success message into view if on mobile/small screen
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
     }
 });
