@@ -25,19 +25,28 @@
             <a href="index.html" class="logo">
                 <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="logo-blue-grad" x1="30" y1="20" x2="80" y2="70" gradientUnits="userSpaceOnUse">
+                        <linearGradient id="logo-blue-grad" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
                             <stop offset="0%" stop-color="#00d2ff"/>
-                            <stop offset="40%" stop-color="#0066ff"/>
-                            <stop offset="100%" stop-color="#001144"/>
+                            <stop offset="100%" stop-color="#0055ff"/>
                         </linearGradient>
-                        <linearGradient id="logo-navy-grad" x1="45" y1="35" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#0055ff"/>
+                        <linearGradient id="logo-navy-grad" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0044cc"/>
                             <stop offset="100%" stop-color="#000b26"/>
                         </linearGradient>
+                        <mask id="logo-arrow-mask">
+                            <rect x="0" y="0" width="100" height="100" fill="white"/>
+                            <path d="M 12 76 L 28 46 L 42 62 L 76 28" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <polygon points="82,22 68,22 82,36" fill="black" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                        </mask>
                     </defs>
-                    <path d="M34.5 28.5L44.5 18.5H70A17 17 0 0 1 70 52.5H57.5L51.5 46.5H70A11 11 0 0 0 70 24.5H48.5L34.5 38.5V28.5Z" fill="url(#logo-blue-grad)"/>
-                    <path d="M35 67.5V41A6 6 0 0 1 41 35H52L46 41H41V61.5Z" fill="url(#logo-blue-grad)"/>
-                    <path d="M50 42.5L57.5 35V60L50 67.5Z" fill="url(#logo-navy-grad)"/>
+                    <g mask="url(#logo-arrow-mask)">
+                        <rect x="28" y="46" width="7" height="30" rx="2" fill="url(#logo-navy-grad)" />
+                        <rect x="42" y="34" width="7" height="42" rx="2" fill="url(#logo-navy-grad)" />
+                        <rect x="56" y="22" width="7" height="54" rx="2" fill="url(#logo-navy-grad)" />
+                        <rect x="70" y="10" width="7" height="66" rx="2" fill="url(#logo-navy-grad)" />
+                    </g>
+                    <path d="M 12 76 L 28 46 L 42 62 L 76 28" stroke="url(#logo-blue-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <polygon points="82,22 68,22 82,36" fill="url(#logo-blue-grad)" stroke="url(#logo-blue-grad)" stroke-width="2" stroke-linejoin="round"/>
                 </svg>
                 <span>Prime Tech <span class="accent-text">Agency</span></span>
             </a>
@@ -267,19 +276,28 @@
                     <div class="brand-logo-full">
                         <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
                             <defs>
-                                <linearGradient id="logo-blue-grad-footer" x1="30" y1="20" x2="80" y2="70" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="logo-blue-grad-footer" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
                                     <stop offset="0%" stop-color="#00d2ff"/>
-                                    <stop offset="40%" stop-color="#0066ff"/>
-                                    <stop offset="100%" stop-color="#001144"/>
+                                    <stop offset="100%" stop-color="#0055ff"/>
                                 </linearGradient>
-                                <linearGradient id="logo-navy-grad-footer" x1="45" y1="35" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0%" stop-color="#0055ff"/>
+                                <linearGradient id="logo-navy-grad-footer" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#0044cc"/>
                                     <stop offset="100%" stop-color="#000b26"/>
                                 </linearGradient>
+                                <mask id="logo-arrow-mask-footer">
+                                    <rect x="0" y="0" width="100" height="100" fill="white"/>
+                                    <path d="M 12 76 L 28 46 L 42 62 L 76 28" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                    <polygon points="82,22 68,22 82,36" fill="black" stroke="black" stroke-width="4" stroke-linejoin="round"/>
+                                </mask>
                             </defs>
-                            <path d="M34.5 28.5L44.5 18.5H70A17 17 0 0 1 70 52.5H57.5L51.5 46.5H70A11 11 0 0 0 70 24.5H48.5L34.5 38.5V28.5Z" fill="url(#logo-blue-grad-footer)"/>
-                            <path d="M35 67.5V41A6 6 0 0 1 41 35H52L46 41H41V61.5Z" fill="url(#logo-blue-grad-footer)"/>
-                            <path d="M50 42.5L57.5 35V60L50 67.5Z" fill="url(#logo-navy-grad-footer)"/>
+                            <g mask="url(#logo-arrow-mask-footer)">
+                                <rect x="28" y="46" width="7" height="30" rx="2" fill="url(#logo-navy-grad-footer)" />
+                                <rect x="42" y="34" width="7" height="42" rx="2" fill="url(#logo-navy-grad-footer)" />
+                                <rect x="56" y="22" width="7" height="54" rx="2" fill="url(#logo-navy-grad-footer)" />
+                                <rect x="70" y="10" width="7" height="66" rx="2" fill="url(#logo-navy-grad-footer)" />
+                            </g>
+                            <path d="M 12 76 L 28 46 L 42 62 L 76 28" stroke="url(#logo-blue-grad-footer)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <polygon points="82,22 68,22 82,36" fill="url(#logo-blue-grad-footer)" stroke="url(#logo-blue-grad-footer)" stroke-width="2" stroke-linejoin="round"/>
                         </svg>
                         <div class="brand-text-container">
                             <span class="brand-title">Prime <span class="brand-title-accent">Tech</span></span>
