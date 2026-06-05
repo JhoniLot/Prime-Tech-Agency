@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const budget = document.getElementById('budget').value;
 
             // Submit using FormSubmit AJAX
-            fetch("https://formsubmit.co/ajax/softwares.primetech@gmail.com", {
+            fetch("https://formsubmit.co/ajax/3d1335e6edbd2bf554ab768de064ca31", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
